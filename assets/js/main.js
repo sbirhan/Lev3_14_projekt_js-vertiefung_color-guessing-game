@@ -2,20 +2,9 @@ var colorCode = [];
 var selectedRGB = 0;
 var numberAttemp = 0;
 
-function initialization(){
-    for (let i = 0; i < 5; i++) {
-        buttonNumber = "button" + i;
-        document.getElementById(buttonNumber).disabled = true;
-    }   
-}
-
 function start(){
     colorCode = [];
     selectedRGB = 0;
-    for (let i = 0; i < 5; i++) {
-        buttonNumber = "button" + i;
-        document.getElementById(buttonNumber).disabled = false;
-    }   
     numberAttemp = 0;
     document.getElementById("result").innerHTML ="";
     for (let i = 0; i < 15; i++) {
@@ -23,6 +12,7 @@ function start(){
     }
     for (let i = 0; i < 5; i++) {
         buttonNumber = "button" + i;
+        document.getElementById(buttonNumber).disabled = false;
         document.getElementById(buttonNumber).style.backgroundColor = "rgb(" + colorCode[3*i] + "," + colorCode[3*i+1] + "," + colorCode[3*i+2] + ")";
     }   
     selectedRGB = Math.floor(Math.random() * 4);
