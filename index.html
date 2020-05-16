@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lev3_14_projekt_js-vertiefung_color-guessing-game</title>
+        <link rel="stylesheet" href="assets/css/index.css">
+    </head>
+    <body onload="initialization();">
+        <h1 style="text-align: center; padding-top: 5vw;">Find RGB Code</h2>
+        <form action="javascript:">
+            <fieldset class="fieldForm">
+                <div class="container">
+                    <p id="rgbCode">Please select the box colored by RGB code that will show here.</p>
+                    <button id="button0" onclick="boxSelection(0);"></button>
+                    <button id="button1" onclick="boxSelection(1);"></button>
+                    <button id="button2" onclick="boxSelection(2);"></button>
+                    <button id="button3" onclick="boxSelection(3);"></button>
+                    <button id="button4" onclick="boxSelection(4);"></button>
+                    <p id="result"> </p>
+                    <button id="btnStart" onclick="start()">Start</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+    </html>
+
+
